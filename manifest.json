@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "BetterLeBonCoin",
+  "short_name": "BetterLeBonCoin",
+  "description": "",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.leboncoin.fr/annonces/offres/*", "http://www.leboncoin.fr/annonces/offres/*"],
+      "js": ["vendor/jquery.min.js", "vendor/underscore.min.js", "main.js"]
+    }
+  ]
+}
