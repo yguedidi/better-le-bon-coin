@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://www.leboncoin.fr/annonces/offres/*", "http://www.leboncoin.fr/annonces/offres/*"],
+      "matches": ["https://www.leboncoin.fr/*/offres/*", "http://www.leboncoin.fr/*/offres/*"],
       "js": ["vendor/jquery.min.js", "vendor/underscore.min.js", "main.js"]
     }
   ]
